@@ -50,7 +50,6 @@ body {
   max-width: 1200px;
 }
 
-
 .logo {
   padding: 1rem 3rem 1rem 1rem;
   background-color: var(--cinza-claro);
@@ -115,23 +114,24 @@ body {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  
+
   background: url("./img/image-home.png") center/cover no-repeat;
 }
 
 .content h3 {
   color: var(--cinza-claro);
-  font-size: 6rem
+  font-size: 6rem;
 }
 
 .content {
-  margin-left: 13rem ;
-  margin-bottom: 18rem ;
+  text-align: center;
+  margin-left: 13rem;
+  margin-bottom: 18rem;
   max-width: 100rem;
   /* line-height: 10rem; */
 
+  
 }
-
 
 .links-container {
   display: flex;
@@ -155,13 +155,15 @@ body {
 .links-up {
   display: flex;
   flex-direction: row;
-  margin: 0 ;
-}
-
-.links-up a{
-  margin: 0rem 1rem;
+  gap: 10px;
 }
 
 .links-container a:hover {
-    color: #473131;
+  color: #473131;
+}
+
+/* SOBRE MIM */
+
+.sobre1-text {
+  width: 50%;
 }
