@@ -102,7 +102,6 @@ body {
 FIM HEADER
 
 
-
 */
 
 
@@ -114,18 +113,16 @@ FIM HEADER
     min-height: 80vh;
 }
 
-.card-login {
+.card-cadastro{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--fundo);
+    background-color: var(--cinza-claro);
     border-radius: 35px;
-    border: 2px  #757171 solid;
     padding: 19rem 12rem;
 }
 
-.card-login h2 {
-      font-size: 4rem;
-    color: var(--cinza-claro);
+.card-cadastro h2 {
+    font-size: 4rem;
 }
