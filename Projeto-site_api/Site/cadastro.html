@@ -19,7 +19,7 @@
   <!--header inicio-->
   <header class="header">
     <section>
-      <a href="home" class="logo">MUSIV..</a>
+      <a href="Index.html" class="logo">MUSIV..</a>
 
       <!-- <nav class="navbar">
                 <a href="forum">Introdução</a>
@@ -35,58 +35,59 @@
   </header>
   <!--header fim-->
 
-  <div class="login">
-    <div class="alerta_erro">
-      <div class="card_erro" id="cardErro">
-        <span id="mensagem_erro"></span>
-      </div>
-    </div>
-    <div class="container">
-      <div class="card-cadastro">
-        <h2>Bem-vindo!</h2>
-        <div class="formulario">
-          <!--
-                         Para inserir mais um campo, copie uma das inputs abaixo.
-                         Assim que inserir vá para o script abaixo.
-                     -->
-          <div class="campo">
-            <span>Código de ativação:</span>
-            <input id="codigo_input" type="text" placeholder="Insira aqui seu código" />
-          </div>
-          <div class="campo">
-            <span>Nome:</span>
-            <input id="nome_input" type="text" placeholder="Seu nome" />
-          </div>
-          <div class="campo">
-            <span>E-mail:</span>
-            <input id="email_input" type="text" placeholder="meuemail@provedor.com" />
-          </div>
-          <div class="campo">
-            <span>Senha:</span>
-            <input id="senha_input" type="password" placeholder="******" />
-          </div>
-          <div class="campo">
-            <span>Confirmação da Senha:</span>
-            <input id="confirmacao_senha_input" type="password" placeholder="******" />
-          </div>
-          <button class="botao" onclick="cadastrar()">Cadastrar</button>
-        </div>
-        <div id="div_aguardar" class="loading-div">
-          <img src="./assets/circle-loading.gif" id="loading-gif" />
-        </div>
 
-        <div id="div_erros_login"></div>
+  <main>
+    <div class="login">
+      <div class="alerta_erro">
+        <div class="card_erro" id="cardErro">
+          <span id="mensagem_erro"></span>
+        </div>
+        
+      </div>
+      <div class="container">
+        <div class="card-cadastro">
+          <h2>Bem-vindo!</h2>
+          <div class="formulario">
+            <div class="campo">
+              <input id="nome_input" type="text" placeholder="Nome de usuário" />
+            </div>
+            <div class="campo">
+              <input id="email_input" type="text" placeholder="Email" />
+            </div>
+            <div class="campo">
+              <input id="senha_input" type="password" placeholder="Crie uma senha" />
+            </div>
+            <div class="campo">
+              <input id="confirmacao_senha_input" type="password" placeholder="Confirme senha" />
+            </div>
+            <div class="btn-box">
+            <button class="botao" onclick="cadastrar()">Cadastrar</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <!--footer inicio-->
-  <div class="footer">
-    <div class="container">
-      <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-      <span class="version">v1.0.0</span>
-    </div>
-  </div>
+  <footer>
+    <section class="contatos">
+      <div>
+        <a href="https://www.instagram.com/musiv_site/"><img src="./assets/img/insta2.png" alt="instagram"></a>
+        <a href="https://github.com/miguel-frino/Projeto_Individual-1Semestre.git"><img width="55" height="55"
+            src="./assets/img/Githubpng.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/miguel-frino-5a05aa29b/"><img src="./assets/img/linkedinpng.png"
+            alt="linkedin"></a>
+      </div>
+
+      <div class="email">
+        <span style=" text-decoration: underline"> musivisite@gmail.com</span>
+      </div>
+      <div class="copyright">
+        <span>© 2025 </span>
+      </div>
+    </section>
+  </footer>
   <!--footer fim-->
 </body>
 

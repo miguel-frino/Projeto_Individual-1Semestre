@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="./login.css">
     <link rel="icon" href="assets/img/icon2.png">
-
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
     <header class="header">
         <section>
-            <a href="home" class="logo">MUSIV..</a>
+            <a href="Index.html" class="logo">MUSIV..</a>
 
             <!-- <nav class="navbar">
                 <a href="forum">Introdução</a>
@@ -36,44 +36,56 @@
         </section>
     </header>
 
-
-    <div class="login">
-        <div class="alerta_erro">
-            <div class="card_erro" id="cardErro">
-                <span id="mensagem_erro"></span>
-            </div>
-        </div>
-        <div class="container">
-            <div class="card-login">
-                <h2>Olá de volta!</h2>
-                <div class="formulario">
-                    <div class="campo">
-                        <span>E-mail:</span>
-                        <input id="email_input" type="text" placeholder="Login">
-                    </div>
-                    <div class="campo">
-                        <span>Senha:</span>
-                        <input id="senha_input" type="password" placeholder="******">
-                    </div>
-                    <button class="botao" onclick="entrar()">Entrar</button>
+    <main>
+        <div class="login">
+            <div class="alerta_erro">
+                <div class="card_erro" id="cardErro">
+                    <span id="mensagem_erro"></span>
                 </div>
 
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
+            </div>
+            <div class="container">
+                <div class="card-login">
+                    <h2>Olá de volta!</h2>
+                    <div class="formulario">
+                        <div class="campo">
+                            <input id="email_input" type="text" placeholder="Usuário">
+                            <i class="bx bxs-user"></i>
+                        </div>
+                        <div class="campo">
+                            <input id="senha_input" type="password" placeholder="Senha">
+                            <i class="bx bxs-lock-alt"></i>
+                        </div>
+                        <div class="btn-box">
+                        <button class="botao" onclick="entrar()">Entrar</button>
+                        </div>
+                    </div>
 
-                <div id="div_erros_login"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
 
     <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-            <span class="version">v1.0.0</span>
-        </div>
-    </div>
+    <footer>
+        <section class="contatos">
+            <div>
+                <a href="https://www.instagram.com/musiv_site/"><img src="./assets/img/insta2.png" alt="instagram"></a>
+                <a href="https://github.com/miguel-frino/Projeto_Individual-1Semestre.git"><img width="55" height="55"
+                        src="./assets/img/Githubpng.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/miguel-frino-5a05aa29b/"><img src="./assets/img/linkedinpng.png"
+                        alt="linkedin"></a>
+            </div>
+
+            <div class="email">
+                <span style=" text-decoration: underline"> musivisite@gmail.com</span>
+            </div>
+            <div class="copyright">
+                <span>© 2025 </span>
+            </div>
+        </section>
+    </footer>
     <!--footer fim-->
 
 </body>
