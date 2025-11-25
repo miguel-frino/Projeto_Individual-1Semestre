@@ -16,7 +16,7 @@
   border: none;
   text-decoration: none;
   /* todas começam com letra maiúscula */
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: 0.2s linear;
   font-family: "Roboto  Serif";
   font-weight: 550;
@@ -45,6 +45,7 @@ a {
   border-image: linear-gradient(to right, #fff, #ffffff4d) 1;
   background-color: var(--main-color);
   padding: 1.5rem;
+  
 }
 
 .header section {
@@ -216,7 +217,7 @@ SOBRE MIM
   /* flex-direction: row; */
   background-color: var(--main-color);
   color: var(--cinza-claro);
-  min-height: 100vh;
+  padding: 6rem;
 }
 
 .sobre1 {
@@ -296,6 +297,8 @@ SOBRE2
 .sobre-container2 {
   min-height: 100vh;
   color: var(--cinza-claro);
+  padding: 6rem;
+
 }
 
 .sobre2 {
@@ -367,7 +370,7 @@ SOBRE2
   /* flex-direction: row; */
   background-color: var(--main-color);
   color: var(--cinza-claro);
-  min-height: 100vh;
+  padding: 6rem;
   padding-bottom:  6rem;
 }
 
@@ -456,7 +459,6 @@ Footer
   color: var(--cinza-claro);
   min-height: 20vh;
   background-color: var(--main-color);
-
 }
 
 /* .copyright {

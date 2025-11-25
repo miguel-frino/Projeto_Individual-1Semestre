@@ -1,0 +1,102 @@
+/* 
+
+
+MENU LATERAL
+
+
+*/
+.menu-btn {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #706972;
+  color: #fff;
+  padding: 1.2rem 1.7rem;
+  border-radius: 0 20px 20px 0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 999;
+
+}
+.menu-btn::after {
+  content: "❯";
+  
+}
+.toggle-main {
+  position: absolute;
+  left: -9999px;
+}
+.toggle-main:checked + .menu-btn::after {
+  content: "❮";
+  margin-left: 5px;
+}
+
+.container-modulo {
+  display: flex;
+  transition: 0.25s;
+}
+
+.menu-lateral {
+  width: 0;
+  overflow: hidden;
+  background-color: #2b2a2a;
+  padding: 2rem;
+  transition: 0.25s;
+}
+
+
+.menu-lateral * {
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.toggle-main:checked ~ .container-modulo .menu-lateral * {
+  opacity: 1;
+  
+}
+
+.toggle-main:checked ~ .container-modulo .menu-lateral {
+  width: 220px;
+}
+
+.toggle-main:checked + .menu-btn {
+  left: 259px;
+}
+.modulo-titulo {
+  font-size: 2.2rem;
+  color: #c8c8c8;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.modulo-sub {
+  margin-left: 1rem;
+}
+.subtopico {
+  font-size: 1.9rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.conteudo-principal {
+  padding: 4rem;
+  color: #c8c8c8;
+  min-height: 80vh;
+}
+.botao {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: #706972;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.conteudo-principal {
+  transition: 0.25s;
+}
+
+
+
+
+

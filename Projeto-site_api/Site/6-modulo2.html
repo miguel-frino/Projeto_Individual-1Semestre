@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIV.. | Módulo 2</title>
+
+    <link rel="stylesheet" href="1.1home.css">
+    <link rel="stylesheet" href="5.1modulo1.css">
+    <link rel="icon" href="assets/img/icon2.png">
+</head>
+
+<body>
+
+    <header class="header">
+        <section>
+            <a href="1-home.html" class="logo">MUSIV..</a>
+            <nav class="navbar">
+                <a href="4-Introducao.html">Sobre o site</a>
+                <a href="8-TecladoPiano.html">Teclado</a>
+                <a href="Sobre.html">Sobre mim</a>
+            </nav>
+            <div class="logincadastro">
+                <a href="2-login.html">Entrar</a>
+                <a href="3-cadastro.html">Cadastrar-se</a>
+            </div>
+        </section>
+    </header>
+
+    <input type="checkbox" id="menuToggle" class="toggle-main">
+    <label for="menuToggle" class="menu-btn"></label>
+
+    <div class="container-modulo">
+        <div class="menu-lateral">
+            <div class="modulo">
+                <div class="modulo-titulo" onclick="abrirFecharModulo()">Módulo 2</div>
+
+                <div class="modulo-sub" id="listaSubMod2">
+                    <div class="subtopico" id="btnNotas" onclick="mostrarNotas()">Notas</div>
+                    <div class="subtopico" id="btnIntervalos" onclick="mostrarIntervalos()">Intervalos</div>
+                    <div class="subtopico" id="btnAcidentes" onclick="mostrarAcidentes()">Acidentes</div>
+                </div>
+            </div>
+        </div>
+
+        <main class="conteudo-principal">
+            <div id="div_mensagem"></div>
+        </main>
+    </div>
+    <footer>
+        <section class="contatos">
+            <div>
+                <a href="https://www.instagram.com/musiv_site/"><img src="./assets/img/insta2.png"></a>
+                <a href="https://github.com/miguel-frino/Projeto_Individual-1Semestre"><img width="55"
+                        src="./assets/img/Githubpng.png"></a>
+                <a href="https://www.linkedin.com/in/miguel-frino"><img src="./assets/img/linkedinpng.png"></a>
+            </div>
+            <div class="email"><span style="text-decoration: underline">musivisite@gmail.com</span></div>
+            <div class="copyright"><span>© 2025</span></div>
+        </section>
+    </footer>
+
+    <script src="5.2modulo1.js"></script>
+
+</body>
+
+</html>
