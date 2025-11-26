@@ -1,21 +1,3 @@
-
-:root {
-  --main-color: #1c1c1c;
-  --fundo: #2b2a2a;
-  --cinza-claro: #c8c8c8;
-  --border: 0.3rem solid #ffffff4d;
-  font-size: 10px;
-}
-
-
-
-/* 
-
-
-MENU LATERAL
-
-
-*/
 .menu-btn {
   position: fixed;
   left: 0;
@@ -60,7 +42,6 @@ MENU LATERAL
 .menu-lateral * {
   opacity: 0;
   transition: opacity 0.15s;
-  position: relative;
 }
 
 .toggle-main:checked ~ .container-modulo .menu-lateral * {
@@ -73,7 +54,7 @@ MENU LATERAL
 }
 
 .toggle-main:checked + .menu-btn {
-  left: 120px;
+  left: 259px;
 }
 .modulo-titulo {
   font-size: 2.2rem;
@@ -107,44 +88,3 @@ MENU LATERAL
 .conteudo-principal {
   transition: 0.25s;
 }
-
-/*
-
-CONTEÚDO
-
-*/
-
-
-.conteudo_modulo {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.box {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  background-color: var(--cinza-claro);
-  color: var(--fundo);
-  padding: 5rem;
-}
-.conteudo_modulo h2 {
-  margin: 0;
-  /* align-self: flex-start; */
-  font-size: 3rem;
-
-}
-
-.conteudo_modulo p {
-  
-  font-size: x-large;
-}
-
-
-
-
-
-

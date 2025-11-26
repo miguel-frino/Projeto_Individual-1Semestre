@@ -1,37 +1,39 @@
-listaSubMod1.style.display = "block";
+listaSubMod3.style.display = "block";
 
-function abrirFecharModulo() {
-  if (listaSubMod1.style.display === "block") {
-    listaSubMod1.style.display = "none";
+function abrirFecharModulo3() {
+  if (listaSubMod3.style.display === "block") {
+    listaSubMod3.style.display = "none";
   } else {
-    listaSubMod1.style.display = "block";
+    listaSubMod3.style.display = "block";
   }
 }
 
-function mostrarRitmo() {
-  div_mensagem.innerHTML = `
-    <h2>Ritmo</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut mi et nunc feugiat elementum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae nulla eu nisl bibendum.</p>
-  `;
+function mostrarOque() {
+  document.getElementById("conteudo_oque").style.display = "block";
+  document.getElementById("conteudo_maior").style.display = "none";
+  document.getElementById("conteudo_como").style.display = "none";
+  document.getElementById("conteudo_pratica").style.display = "none";
 }
 
-function mostrarMelodia() {
-  div_mensagem.innerHTML = `
-    <h2>Melodia</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus neque sed justo varius.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus purus vel augue condimentum.</p>
-  `;
+function mostrarMaior() {
+  document.getElementById("conteudo_oque").style.display = "none";
+  document.getElementById("conteudo_maior").style.display = "block";
+  document.getElementById("conteudo_como").style.display = "none";
+  document.getElementById("conteudo_pratica").style.display = "none";
 }
 
-function mostrarHarmonia() {
-  div_mensagem.innerHTML = `
-    <h2>Harmonia</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet urna nec massa dignissim.</p>
-
-    <a class="botao" href="index.html">Módulo 1 concluído</a>
-    <a class="botao" href="7-Quiz-Modulo1.html">Quiz do módulo</a>
-  `;
+function mostrarComoMontar() {
+  document.getElementById("conteudo_oque").style.display = "none";
+  document.getElementById("conteudo_maior").style.display = "none";
+  document.getElementById("conteudo_como").style.display = "block";
+  document.getElementById("conteudo_pratica").style.display = "none";
 }
+
+function mostrarPrática() {
+  document.getElementById("conteudo_oque").style.display = "none";
+  document.getElementById("conteudo_maior").style.display = "none";
+  document.getElementById("conteudo_como").style.display = "none";
+  document.getElementById("conteudo_pratica").style.display = "block";
+}
+
 

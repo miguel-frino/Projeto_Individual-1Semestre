@@ -7,7 +7,7 @@
     <title>MUSIV.. | Módulo 2</title>
 
     <link rel="stylesheet" href="1.1home.css">
-    <link rel="stylesheet" href="5.1modulo1.css">
+    <link rel="stylesheet" href="6.1modulo2.css">
     <link rel="icon" href="assets/img/icon2.png">
 </head>
 
@@ -28,26 +28,52 @@
         </section>
     </header>
 
-    <input type="checkbox" id="menuToggle" class="toggle-main">
+    <input type="checkbox" id="menuToggle" class="toggle-main" checked>
     <label for="menuToggle" class="menu-btn"></label>
 
     <div class="container-modulo">
-        <div class="menu-lateral">
-            <div class="modulo">
-                <div class="modulo-titulo" onclick="abrirFecharModulo()">Módulo 2</div>
 
+        <div class="menu-lateral">
+
+            <div class="modulo">
+                <a class="modulo-titulo" href="5-modulo1.html">Módulo 1</a>
+            </div>
+
+            <div class="modulo">
+                <div class="modulo-titulo" onclick="abrirFecharModulo2()">Módulo 2</div>
                 <div class="modulo-sub" id="listaSubMod2">
-                    <div class="subtopico" id="btnNotas" onclick="mostrarNotas()">Notas</div>
-                    <div class="subtopico" id="btnIntervalos" onclick="mostrarIntervalos()">Intervalos</div>
-                    <div class="subtopico" id="btnAcidentes" onclick="mostrarAcidentes()">Acidentes</div>
+                    <div class="subtopico" onclick="mostrarNotas()">Notas</div>
+                    <div class="subtopico" onclick="mostrarIntervalos()">Intervalos</div>
+                    <div class="subtopico" onclick="mostrarAcidentes()">Acidentes</div>
                 </div>
             </div>
+
+            <div class="modulo">
+                <a class="modulo-titulo" href="7-modulo3.html">Módulo 3</a>
+            </div>
+
         </div>
 
         <main class="conteudo-principal">
-            <div id="div_mensagem"></div>
+
+            <div id="conteudo_notas" class="conteudo-modulo">
+                <h2>Notas</h2>
+                <p>Conteúdo de notas aqui...</p>
+            </div>
+
+            <div id="conteudo_intervalos" class="conteudo-modulo" style="display:none;">
+                <h2>Intervalos</h2>
+                <p>Conteúdo de intervalos aqui...</p>
+            </div>
+
+            <div id="conteudo_acidentes" class="conteudo-modulo" style="display:none;">
+                <h2>Acidentes</h2>
+                <p>Conteúdo de acidentes aqui...</p>
+            </div>
+
         </main>
     </div>
+
     <footer>
         <section class="contatos">
             <div>
@@ -61,7 +87,7 @@
         </section>
     </footer>
 
-    <script src="5.2modulo1.js"></script>
+    <script src="6.2modulo2.js"></script>
 
 </body>
 
