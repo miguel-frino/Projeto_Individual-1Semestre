@@ -1,5 +1,20 @@
 listaSubMod1.style.display = "block";
 
+var ultimoModulo = localStorage.getItem("moduloAtivo");
+
+function esconderTudo() {
+  document.getElementById("conteudo_ritmo").style.display = "none";
+  document.getElementById("conteudo_melodia").style.display = "none";
+  document.getElementById("conteudo_harmonia").style.display = "none";
+}
+
+if (ultimoModulo) {
+  esconderTudo();
+  document.getElementById(ultimoModulo).style.display = "block";
+} else {
+  document.getElementById("conteudo_ritmo").style.display = "block";
+}
+
 function abrirFecharModulo1() {
   if (listaSubMod1.style.display === "block") {
     listaSubMod1.style.display = "none";
@@ -9,20 +24,20 @@ function abrirFecharModulo1() {
 }
 
 function mostrarRitmo() {
+  esconderTudo();
   document.getElementById("conteudo_ritmo").style.display = "block";
-  document.getElementById("conteudo_melodia").style.display = "none";
-  document.getElementById("conteudo_harmonia").style.display = "none";
+  localStorage.setItem("moduloAtivo", "conteudo_ritmo");
 }
 
 function mostrarMelodia() {
-  document.getElementById("conteudo_ritmo").style.display = "none";
+  esconderTudo();
   document.getElementById("conteudo_melodia").style.display = "block";
-  document.getElementById("conteudo_harmonia").style.display = "none";
+  localStorage.setItem("moduloAtivo", "conteudo_melodia");
 }
 
 function mostrarHarmonia() {
-   document.getElementById("conteudo_ritmo").style.display = "none";
-    document.getElementById("conteudo_melodia").style.display = "none";
-    document.getElementById("conteudo_harmonia").style.display = "block";
-  
+  esconderTudo();
+  document.getElementById("conteudo_harmonia").style.display = "block";
+  localStorage.setItem("moduloAtivo", "conteudo_harmonia");
 }
+
