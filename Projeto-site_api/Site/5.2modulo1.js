@@ -16,12 +16,17 @@ if (ultimoModulo) {
 }
 
 function abrirFecharModulo1() {
+  var menu = document.querySelector(".menu-lateral");
+
+  menu.classList.toggle("aberto");
+
   if (listaSubMod1.style.display === "block") {
     listaSubMod1.style.display = "none";
   } else {
     listaSubMod1.style.display = "block";
   }
 }
+
 
 function mostrarRitmo() {
   esconderTudo();
@@ -40,4 +45,3 @@ function mostrarHarmonia() {
   document.getElementById("conteudo_harmonia").style.display = "block";
   localStorage.setItem("moduloAtivo", "conteudo_harmonia");
 }
-

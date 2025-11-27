@@ -1,29 +1,18 @@
-.menu-btn {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #706972;
-  color: #fff;
-  padding: 1.2rem 1.7rem;
-  border-radius: 0 20px 20px 0;
-  font-size: 2.5rem;
-  cursor: pointer;
-  z-index: 999;
+:root {
+  --main-color: #1c1c1c;
+  --fundo: #2b2a2a;
+  --cinza-claro: #c8c8c8;
+  --border: 0.3rem solid #ffffff4d;
+  font-size: 10px;
+}
 
-}
-.menu-btn::after {
-  content: "❯";
-  
-}
-.toggle-main {
-  position: absolute;
-  left: -9999px;
-}
-.toggle-main:checked + .menu-btn::after {
-  content: "❮";
-  margin-left: 5px;
-}
+/* 
+
+
+MENU LATERAL
+
+
+*/
 
 .container-modulo {
   display: flex;
@@ -31,21 +20,11 @@
 }
 
 .menu-lateral {
-  width: 0;
+  width: 220px;
   overflow: hidden;
   background-color: #2b2a2a;
   padding: 2rem;
   transition: 0.25s;
-}
-
-.menu-lateral * {
-  opacity: 0;
-  transition: opacity 0.15s;
-}
-
-.toggle-main:checked ~ .container-modulo .menu-lateral * {
-  opacity: 1;
-  
 }
 
 .toggle-main:checked ~ .container-modulo .menu-lateral {
@@ -53,7 +32,7 @@
 }
 
 .toggle-main:checked + .menu-btn {
-  left: 259px;
+  left: 120px;
 }
 .modulo-titulo {
   font-size: 2.2rem;
@@ -86,4 +65,59 @@
 
 .conteudo-principal {
   transition: 0.25s;
+}
+
+/*
+
+CONTEÚDO
+
+*/
+
+.conteudo-principal {
+  /* gap: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+
+.conteudo_modulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: var(--cinza-claro);
+  color: var(--fundo);
+  margin-bottom: 20px;
+  padding: 4rem;
+  width: 1000px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.conteudo_modulo h2 {
+  margin-bottom: 35px;
+  /* align-self: flex-start; */
+  font-size: 3rem;
+}
+
+.conteudo_modulo h3 {
+  font-size: 2.7rem;
+  margin-bottom: 18px;
+}
+
+.conteudo_modulo p {
+  font-size: x-large;
+}
+
+.conteudo_modulo b {
+  color: #7a4242;
 }

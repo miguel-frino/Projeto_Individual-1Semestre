@@ -13,30 +13,6 @@ MENU LATERAL
 
 
 */
-.menu-btn {
-  position: fixed;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #706972;
-  color: #fff;
-  padding: 1.2rem 1.7rem;
-  border-radius: 0 20px 20px 0;
-  font-size: 2.5rem;
-  cursor: pointer;
-  z-index: 999;
-}
-.menu-btn::after {
-  content: "❯";
-}
-.toggle-main {
-  position: absolute;
-  left: -9999px;
-}
-.toggle-main:checked + .menu-btn::after {
-  content: "❮";
-  margin-left: 5px;
-}
 
 .container-modulo {
   display: flex;
@@ -44,21 +20,11 @@ MENU LATERAL
 }
 
 .menu-lateral {
-  width: 0;
+  width: 220px;
   overflow: hidden;
   background-color: #2b2a2a;
   padding: 2rem;
   transition: 0.25s;
-}
-
-.menu-lateral * {
-  opacity: 0;
-  transition: opacity 0.15s;
-  position: relative;
-}
-
-.toggle-main:checked ~ .container-modulo .menu-lateral * {
-  opacity: 1;
 }
 
 .toggle-main:checked ~ .container-modulo .menu-lateral {
@@ -130,9 +96,11 @@ CONTEÚDO
   flex-direction: column;
   background-color: var(--cinza-claro);
   color: var(--fundo);
+  margin: 0 auto;
   margin-bottom: 20px;
-  padding: 4rem;
+  padding: 2rem;
   width: 1000px;
+  width: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
