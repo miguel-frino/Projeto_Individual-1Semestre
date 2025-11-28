@@ -27,19 +27,6 @@ O tema poderá ser expandido futuramente para outros instrumentos.
 
 ---
 
-## 💬 Fórum de Perguntas
-
-O projeto contará com um **fórum**, onde os usuários poderão:
-
-* Tirar dúvidas sobre música.
-* Ajudar outros iniciantes.
-* Compartilhar experiências de aprendizado.
-* Criar uma comunidade amigável e colaborativa.
-
-Este espaço tem como objetivo aproximar estudantes e permitir que cresçam juntos.
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 O desenvolvimento será feito utilizando:
@@ -57,9 +44,6 @@ O desenvolvimento será feito utilizando:
 
 * **Home** — Apresentação do site e menu inicial.
 * **Conceitos Básicos de Música** — Conteúdos educativos.
-* **Aprenda Teclado** — Guia para iniciantes.
-* **Fórum** — Espaço interativo entre os usuários.
-* **Quizzes Musicais** — Testes interativos para reforço do aprendizado.
 * **Login e Cadastro** — Sistema de autenticação e criação de contas.
 
 ---
