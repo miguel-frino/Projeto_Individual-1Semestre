@@ -1,6 +1,6 @@
 # 🎵 Projeto Acadêmico — Site para Aprender Música
 
-Bem-vindo ao repositório do meu projeto invidual SPTech! Este trabalho consiste no desenvolvimento de um site dedicado ao ensino de **conceitos musicais básicos** e ao incentivo para que iniciantes ingressem no mundo da música, começando pelo **teclado musical**.
+Bem-vindo ao repositório do meu projeto invidual SPTech! Este trabalho consiste no desenvolvimento de um site dedicado ao ensino de **conceitos musicais básicos** e ao incentivo para que iniciantes ingressem no mundo da música.
 
 ---
 
@@ -27,19 +27,6 @@ O tema poderá ser expandido futuramente para outros instrumentos.
 
 ---
 
-## 💬 Fórum de Perguntas
-
-O projeto contará com um **fórum**, onde os usuários poderão:
-
-* Tirar dúvidas sobre música.
-* Ajudar outros iniciantes.
-* Compartilhar experiências de aprendizado.
-* Criar uma comunidade amigável e colaborativa.
-
-Este espaço tem como objetivo aproximar estudantes e permitir que cresçam juntos.
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 O desenvolvimento será feito utilizando:
@@ -57,9 +44,6 @@ O desenvolvimento será feito utilizando:
 
 * **Home** — Apresentação do site e menu inicial.
 * **Conceitos Básicos de Música** — Conteúdos educativos.
-* **Aprenda Teclado** — Guia para iniciantes.
-* **Fórum** — Espaço interativo entre os usuários.
-* **Quizzes Musicais** — Testes interativos para reforço do aprendizado.
 * **Login e Cadastro** — Sistema de autenticação e criação de contas.
 
 ---
