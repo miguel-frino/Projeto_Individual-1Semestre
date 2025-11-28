@@ -26,6 +26,11 @@
   background-color: var(--black);
 } */
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   background-color: var(--main-color);
   padding-top: 9rem;
